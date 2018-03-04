@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: java-spring-cloud-example
+    name: java-spring-cloud-stream-example
   cloud:
     stream:
       binder:
