@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: java-spring-cloud-example
+  cloud:
+    stream:
+      binder:
+        brokers: localhost:9092
+        zkNodes: localhost:2181
+      bindings:
+        input:
+          destination: car-topic
+          contentType: application/json
+        output:
+          destination: car-topic
+          contentType: application/json
